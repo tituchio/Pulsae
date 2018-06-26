@@ -48,9 +48,9 @@
 $active_group = in_array($_SERVER['HTTP_HOST'], array('works.ardistudio.com'))?'default':($_SERVER['HTTP_HOST']=='localhost'?'local':'live');
 $active_record = TRUE;
 
-$db['default']['hostname'] = '164.125.121.211';
-$db['default']['username'] = 'ardi';
-$db['default']['password'] = 'rahasia';
+$db['default']['hostname'] = '111.222.333.444';
+$db['default']['username'] = 'aaa';
+$db['default']['password'] = 'abcde';
 $db['default']['database'] = 'pulsae';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
