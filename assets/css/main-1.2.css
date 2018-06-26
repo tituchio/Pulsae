@@ -1,0 +1,191 @@
+/**
+ * Football Tracker Template
+ * Author : Ardi Imawan <ardiimawan@gmail.com>
+ */
+body{
+	background-color: rgba(0, 0, 0, 0.8);
+	font-size: 12px;
+	font-family:'Lucida Grande', Arial, sans-serif;
+}
+#main-container{
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-top:20px;
+	min-height:100%;
+}
+
+#top-board{
+	background: #e9eaee;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	margin: 0px 0px 10px;
+}
+#top-board div{
+	text-align: center;
+}
+#top-board .club-logo img{
+	height:48px;
+}
+#top-board .club-name{
+	font-size:24px;
+	font-weight: bold;
+	line-height: 36pt;
+}
+#score{
+	background:#3d3d3d;
+	-webkit-border-radius: 6px; 
+	-moz-border-radius: 6px;
+	border-radius:6px;
+	color:#fff;
+	font-size:36px; 
+	font-weight: bold;
+	line-height: 36pt;
+}
+
+#main-container{
+	padding-left:20px;
+}
+
+#timeline{
+	height:500px;
+}
+
+.team{
+	color: rgb(0, 128, 0);
+	font-size:24px;
+	margin:10px 0px;
+}
+.team ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.team ul li{
+	background:#e9eaee;
+	color:rgb(0, 128, 0)/*#3D3D3D*/;
+	list-style:none;
+	display:inline-block;
+	margin-left:3px;
+	/*width:30px;*/
+	text-align: center;
+}
+.team ul li a{
+	font-size:18px;
+}
+
+#field{
+	margin:0 auto;
+	background:url(../img/soccer-field-empty.svg) no-repeat;
+	background-size: contain;
+	height:512px;
+	width:800px;
+	position:relative;
+	overflow: hidden;
+}
+
+#field ul.tokens, #field ul.tokens li{
+	list-style: none;
+}
+#field ul.tokens li{
+	position:absolute;
+	left:-30px;
+	top:-30px;
+	border-radius: 50%;
+	width:18px;
+	height:18px;
+	background-size: contain;
+	font-size:9px;
+	color:#fff;
+	text-align: center;
+	line-height:18px;
+	cursor: pointer;
+	-webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+}
+
+#field ul.tokens li.selected, .team li.selected{
+	-webkit-animation: blink2 0.5s infinite, changeSize 0.3s 1;
+}
+@-webkit-keyframes changeSize {
+	from {transform: scale(1);}
+	to {transform: scale(2.5)}
+}
+@-webkit-keyframes blink2 {
+	0% {opacity:0.3;}
+	100% {opacity:1;}
+}
+
+@keyframes blink2 {
+	0% {opacity:0.3;}
+	100% {opacity:1;}
+}
+
+#field ul.tokens.one li{
+	/*background:url(../img/tokens/circle-blue.svg) no-repeat center center;
+	background-size: contain; // */
+	
+}
+#field ul.tokens.one li.keeper{
+	/* background:url(../img/tokens/circle-blue-black.svg) no-repeat center center;
+	background-size: contain; // */
+	
+}
+#field ul.tokens.two li{
+	/* background:url(../img/tokens/rect-red.svg) no-repeat center center;
+	background-size: contain; // */
+	
+}
+#field ul.tokens.two li.keeper{
+	/* background:url(../img/tokens/rect-red-black.svg) no-repeat center center;
+	background-size: contain; // */
+	
+}
+
+#field ul.tokens.other li.ball{
+	
+	background:url(../img/tokens/soccer-ball.svg) no-repeat center center;
+	background-size: contain; // */
+
+}
+#field ul.tokens.other li.referee{
+	/* background:url(../img/tokens/circle-black-white.svg) no-repeat center center;
+	background-size: contain; // */
+	width: 0; 
+	height: 0; 
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	
+	border-bottom: 12px solid black;
+	border-radius:0px;
+}
+
+.profile .box{
+	display:block;
+	width:100%;
+	min-height:100px;
+	border:1px solid #a3a3a3;
+}
+
+footer{
+	color:#E9EAEE;
+	text-align:center;
+	padding:10px 10px;
+	border-top:1px solid #E9EAEE;
+}
+
+aside .panel-heading h3{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+/* hack */
+aside .progress{
+	height:12px;
+}
+aside .progress .progressbar-back-text{
+	line-height:12px;
+	font-size:10px;
+}

@@ -1,0 +1,176 @@
+/**
+ * Football Tracker Template
+ * Author : Ardi Imawan <ardiimawan@gmail.com>
+ */
+
+.team{
+	color: rgb(0, 128, 0);
+	font-size:24px;
+	margin:10px 0px;
+}
+.team ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.team ul li{
+	background:#e9eaee;
+	color:rgb(0, 128, 0)/*#3D3D3D*/;
+	list-style:none;
+	display:inline-block;
+	margin-left:3px;
+	/*width:30px;*/
+	text-align: center;
+}
+.team ul li a{
+	font-size:18px;
+}
+
+/* hack */
+aside .progress{
+	height:12px;
+}
+aside .progress .progressbar-back-text{
+	line-height:12px;
+	font-size:10px;
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+/*** MODIF ****/
+.field_con{background-color:#333;padding:22px 0;}
+.field{
+	background:url(../sk-theme/images/field.gif) no-repeat;
+	background-size: contain;
+	position:relative;
+	overflow: hidden;
+}
+.field ul.tokens, #field ul.tokens li{
+	list-style: none;
+}
+.field ul.tokens li{
+	position:absolute;
+	left:-30px;
+	top:-30px;
+	border-radius: 50%;
+	width:36px;
+	height:36px;
+	padding:0;
+	margin:0;
+	background-size: contain;
+	font-size:22px;
+	color:#fff;
+	text-align: center;
+	line-height:36px;
+	cursor: pointer;
+	-webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+}
+
+.field ul.tokens li.selected, .team li.selected{
+	-webkit-animation: blink2 0.5s infinite, changeSize 0.3s 1;
+}
+@-webkit-keyframes changeSize {
+	from {transform: scale(1);}
+	to {transform: scale(2.5)}
+}
+@-webkit-keyframes blink2 {
+	0% {opacity:0.3;}
+	100% {opacity:1;}
+}
+
+@keyframes blink2 {
+	0% {opacity:0.3;}
+	100% {opacity:1;}
+}
+
+.field ul.tokens.one li{
+	/*background:url(../img/tokens/circle-blue.svg) no-repeat center center;
+	background-size: contain; // */
+	
+}
+.field ul.tokens.one li.keeper{
+	/* background:url(../img/tokens/circle-blue-black.svg) no-repeat center center;
+	background-size: contain; // */
+	
+}
+.field ul.tokens.two li{
+	/* background:url(../img/tokens/rect-red.svg) no-repeat center center;
+	background-size: contain; // */
+	
+}
+.field ul.tokens.two li.keeper{
+	/* background:url(../img/tokens/rect-red-black.svg) no-repeat center center;
+	background-size: contain; // */
+	
+}
+
+.field ul.tokens.other li.ball{
+	
+	background:url(../img/tokens/soccer-ball.svg) no-repeat center center;
+	background-size: contain; // */
+
+}
+.field ul.tokens.other li.referee{
+	/* background:url(../img/tokens/circle-black-white.svg) no-repeat center center;
+	background-size: contain; // */
+	width: 0; 
+	height: 0; 
+	border-left: 24px solid transparent;
+	border-right: 24px solid transparent;
+	
+	border-bottom: 24px solid black;
+	border-radius:0px;
+}
+
+.field ul.tokens li.player_GK{
+	border:3px dashed #000;
+}
+
+#options{
+	background:#fff;
+	padding:20px;
+	min-width:400px;
+}
+#options select{
+	width:100%;
+}
+#options label{
+	display:block;
+	font-size:18px;
+	line-height:18px;
+	color:#000;
+	font-weight: bold;
+}
+
+#options button, #detailAnalysis button{
+	background:#ff7a00;
+	color:#fff;
+	padding:8px 16px;
+}
+
+#detailAnalysis{
+	width: 389px;
+}
+#detailAnalysis .sec_footer{
+	margin-top:20px;
+	text-align:center;
+}
+
+.field canvas{
+	width:100%;
+	height:100%;
+	position:absolute;
+}

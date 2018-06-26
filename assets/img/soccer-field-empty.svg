@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<svg width="1072" height="682" xmlns="http://www.w3.org/2000/svg">
+ <!--&#22270;&#32440;&#21306;-->
+
+ <!--&#29699;&#22330;&#26694;&#21644;&#20013;&#32447;-->
+ <!--&#20013;&#32447;-->
+ <!--&#32602;&#29699;&#28857;-->
+ <!--&#29699;&#38376;-->
+ <!--&#29699;&#38376;&#21306;-->
+ <!--&#31105;&#21306; -->
+ <!--&#35282;&#29699;&#24359;-->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="684" width="1074" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect y="0" stroke="null" id="svg_1" fill="#333333" height="682.25" width="1072.044252" x="0.288468"/>
+  <path stroke="white" id="svg_2" fill="green" stroke-width="2" d="m536.332764,1.333229l-525.00003,0l0,680.000084l1049.999907,0l0,-680.000084l-524.999878,0l0,680.000084l0,-680.000084z"/>
+  <circle id="svg_3" fill-opacity="0" stroke-width="2" stroke="white" r="91.5" cy="341.333229" cx="536.332734"/>
+  <circle id="svg_4" fill="white" stroke="white" r="2" cy="341.333229" cx="536.332734"/>
+  <circle id="svg_5" fill="white" stroke="white" r="2" cy="341.333229" cx="121.332734"/>
+  <circle id="svg_6" fill="white" stroke="white" r="2" cy="341.333229" cx="951.332734"/>
+  <path fill="white" id="svg_7" fill-opacity="0" stroke-width="2" stroke="#ffffff" d="m11.332734,305.733185l-10,0l0,72.200012l10,0l0,-72.200012z"/>
+  <path id="svg_8" fill-opacity="0" stroke-width="2" stroke="white" d="m1061.332642,305.733185l10,0l0,72.200012l-10,0l0,-72.200012z"/>
+  <path id="svg_9" fill-opacity="0" stroke-width="2" stroke="white" d="m11.332734,250.7332l55.000007,0l0,182.199997l-55.000007,0l0,-182.199997z"/>
+  <path id="svg_10" fill-opacity="0" stroke-width="2" stroke="white" d="m1061.332642,250.7332l-54.999939,0l0,182.199997l54.999939,0l0,-182.199997z"/>
+  <path id="svg_11" fill-opacity="0" stroke-width="2" stroke="white" d="m11.332734,140.733246l165.000014,0l0,402.200043l-165.000014,0l0,-402.200043z"/>
+  <path id="svg_12" fill-opacity="0" stroke-width="2" stroke="white" d="m1061.332642,140.733246l-164.999878,0l0,402.200043l164.999878,0l0,-402.200043z"/>
+  <path id="svg_13" fill="green" stroke-width="2" stroke="white" d="m176.332748,268.208191a91.5,91.5 0 0 1 0,146.25l0,-146.25z"/>
+  <path id="svg_14" fill="green" stroke-width="2" stroke="white" d="m896.332764,268.208191a91.5,91.5 0 0 0 0,146.25l0,-146.25z"/>
+  <path id="svg_15" fill-opacity="0" stroke-width="2" stroke="white" d="m11.332734,11.333228a10,10 0 0 0 9.999999,-9.999999l-9.999999,0l0,9.999999z"/>
+  <path id="svg_16" fill-opacity="0" stroke-width="2" stroke="white" d="m21.332733,681.333313a10,10 0 0 0 -9.999999,-10l0,10l9.999999,0z"/>
+  <path id="svg_17" fill-opacity="0" stroke-width="2" stroke="white" d="m1061.332642,671.333313a10,10 0 0 0 -10,10l10,0l0,-10z"/>
+  <path id="svg_18" fill-opacity="0" stroke-width="2" stroke="white" d="m1051.332642,1.333229a10,10 0 0 0 10,9.999999l0,-9.999999l-10,0z"/>
+ </g>
+</svg>
